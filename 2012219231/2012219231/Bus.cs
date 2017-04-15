@@ -8,5 +8,9 @@ namespace _2012219231
 {
     class Bus
     {
+        public Bus()
+        {
+
+        }
     }
 }

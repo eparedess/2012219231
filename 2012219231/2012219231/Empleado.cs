@@ -8,5 +8,16 @@ namespace _2012219231
 {
     public class Empleado
     {
+        public int EmpleadoId { get; set; }
+        public string DNI { get; set; }
+
+        public Empleado()
+        {
+
+        }
+        public Empleado (String dni)
+        {
+            DNI = dni;
+        }
     }
 }

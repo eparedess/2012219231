@@ -10,7 +10,7 @@ namespace _2012219231
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mensaje de Prueba");
+            
         }
     }
 }

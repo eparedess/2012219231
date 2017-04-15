@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace _2012219231
 {
-    class Tripulacion
+    public class Tripulacion : Empleado
     {
+        private TipoTripulacion _tipo;
+        public TipoTripulacion TipoTripulacion
+        {
+            get
+            {
+                return _tipo;
+            }
+        }
+
+        
     }
 }

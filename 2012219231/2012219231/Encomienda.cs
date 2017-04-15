@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace _2012219231
 {
-    class Encomienda
+    public class Encomienda
     {
+        private Encomienda _encomienda;
+        public Encomienda encomienda
+        {
+            get
+            {
+                return _encomienda;
+            }
+        }
     }
 }

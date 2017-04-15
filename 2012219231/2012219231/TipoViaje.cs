@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace _2012219231
 {
-    class TipoViaje
+   public class TipoViaje
     {
+        private string _TipoViaje;
+        private string Tipo
+        {
+            get
+            {
+                return _TipoViaje;
+            }
+            set
+            {
+                if (value.Length > 0)
+                    _TipoViaje = value;
+
+            }
+        }
+        public TipoViaje(string tipoViaje)
+        {
+            Tipo = tipoViaje;
+        }
     }
 }
