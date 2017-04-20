@@ -11,7 +11,10 @@ namespace _2012219231
         private LugarViaje _lugar;
         private TipoViaje _tipo;
         private Cliente _cliente;
-        
+
+        public Transporte(int tipo) : base(tipo)
+        {
+        }
 
         public LugarViaje LugarViaje {
             get
@@ -28,9 +31,13 @@ namespace _2012219231
         }
         public Cliente Cliente { get { return _cliente; } }
        
-        public Transporte()
+        
+        public override void tipoServicio(int tipo)
         {
-
+            if (tipo == 001)
+            {
+                Console.WriteLine("El servicio seleccionado es transporte");
+            }
         }
     }
 }

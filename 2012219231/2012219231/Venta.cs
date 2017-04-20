@@ -12,7 +12,7 @@ namespace _2012219231
         private Cliente _Cliente;
         private TipoComprobante _TipoComprobante;
         private TipoPago _TipoPago;
-        private Servicio _servicio;
+        //private Servicio _servicio;
 
         public Administrativo Administrativo
         {
@@ -21,7 +21,7 @@ namespace _2012219231
                 return _administrativo;
             }
         
-    }
+        }
 
         public Cliente Cliente
         {
@@ -47,13 +47,17 @@ namespace _2012219231
             }
 
         }
-        public Servicio Servicio
+        private Servicio _Servicio;
+        
+        public Venta(int tipo)
         {
-            get
-            {
-                return _servicio;
-            }
+            _Servicio = new Servicio(tipo);
+        }
 
+        public Servicio Tipos
+        {
+            get { return _Servicio; }
+            private set { _Servicio = value; }
         }
     }
 }

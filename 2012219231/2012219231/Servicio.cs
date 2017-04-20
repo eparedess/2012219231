@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace _2012219231
 {
-    public class Servicio
+    public abstract class Servicio
     {
+
+       public abstract void tipoServicio(int tipo);
+        private int tipServicio;
+
+        public int Tipo
+        {
+            get { return tipServicio; }
+            set { tipServicio = value; }
+        }
+
+        public Servicio(int tipo)
+        {
+            Tipo = tipo;
+        }
+          
     }
+
+    
+
 }
